@@ -1,0 +1,82 @@
+body {
+    padding: 40px;
+    background-color: paleturquoise;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.card {
+    margin: 20px auto;
+    max-width: 400px;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px grey;
+    transition: background-color 0.3s, transform 0.3s ease;
+}
+
+.card:hover {
+    background-color: khaki;
+    transform: scale(1.1);
+}
+
+h1::before {
+    content: '🥳 ';
+}
+
+h1::after {
+    content: ' 🥳';
+}
+
+.message {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.card-links {
+    display: flex;
+    justify-content: space-around;
+    gap: 4px;
+}
+
+.card-links a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    background-color: midnightblue;
+    border-radius: 5px;
+}
+
+.card-links a:hover {
+    background-color: orangered;
+}
+
+.card-links a:focus {
+    outline: 2px solid green;
+}
+
+.card-links a:active {
+    background-color: indigo;
+}
+
+.card-links a:visited {
+    color: yellow;
+}
+
+section {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px grey;
+    display: none;
+}
+
+section:hover {
+    transform: skewX(10deg);
+}
+
+section:target {
+    display: block;
+}
